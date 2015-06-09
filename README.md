@@ -9,18 +9,21 @@ Component to integrate with an [Authomator](https://github.com/authomator) backe
 - exposes `auth` and `session` on `$rootScope` 
 - includes code to check access during application bootstrap
 - includes code to check access during route/state changes
-- includes http interceptor that redirects to login page when 401 response is received
+- includes HTTP interceptor that redirects to login page when 401 response is received
 - includes unit tests
 
 ## Installation
 
-To install the component:
+First install the component:
 
 ```bash
 $ ngx install angular-authomator
 ```
 
-Edit `app.config.authomator.js` in the `_build` directory and supply your Authomator url.
+Then:
+
+- edit `app.config.authomator.js` in the `_build` directory and supply your Authomator url.
+- remove files you don't need e.g. if you don't need a state change listener, HTTP interceptor, etc.
 
 No clue what the `ngx` command line tool is? Learn more about [AngularJS Express](https://github.com/angular-express/angular-express).
 
@@ -151,6 +154,28 @@ In markup:
 ## Session service
 
 
+## Change log
+
+### v1.0.0
+
+- Used in production
+
+### v0.4.0
+
+- Added HTTP interceptor
+
+### v0.3.0
+
+- Added access control scripts
+
+### v0.2.0
+
+- Added session service
+- Added auth service
+
+### v0.1.0
+
+- Initial version
 
 ## License
 
