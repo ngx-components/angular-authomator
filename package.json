@@ -1,0 +1,15 @@
+{
+  "name": "angular-authomator",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Jurgen Van de Moere",
+    "email": "jurgen.van.de.moere@gmail.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
